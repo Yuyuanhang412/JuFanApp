@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/li_img_guide_3"
+        />
+    <Button
+        android:id="@+id/bt_login02"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="540dp"
+        android:background="#00000000"
+        android:text="立即体验"
+        android:onClick="LoginOnclick"
+        android:textColor="#FFFFFF"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:layout_marginTop="400dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+
+        >
+    <Button
+        android:id="@+id/bt_video_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹幕"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/ed_video"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="双手打字以表清白" />
+    <View
+        android:layout_width="5dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/bt_video_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

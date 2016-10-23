@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jufanapp.mainpager.PlateActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_plate01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/li_btn_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="富豪榜"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/li_rich_web"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view_plate01"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gainsboro"
+        android:layout_below="@+id/lin_plate01"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/liner_bang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view_plate01"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_plate_week"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:text="周榜"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/view1_plate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D83A51" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_plate_all"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:text="总榜"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/view2_plate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#D83A51" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_plate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/liner_bang"
+        ></android.support.v4.view.ViewPager>
+
+
+
+
+
+</RelativeLayout>

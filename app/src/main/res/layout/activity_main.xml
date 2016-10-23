@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jufanapp.mainpager.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector01"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="首页"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/li_maintab_party_pic_selected"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector02"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="我的"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_bar"
+        android:background="@color/white" />
+
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        >
+
+    </FrameLayout>
+
+</RelativeLayout>

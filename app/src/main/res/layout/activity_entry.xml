@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jufanapp.EntryActivity">
+
+    <ImageView
+        android:id="@+id/iv_shouye"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shouye"
+        />
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="540dp"
+        >
+    <Button
+        android:layout_width="15dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/li_icon_wx_pressed"
+        android:layout_marginLeft="20dp"
+        android:onClick="WeixinOnClick"
+        android:layout_weight="1"
+        />
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/li_icon_qq_pressed"
+            android:layout_weight="1"
+            android:onClick="QQOnClick"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/li_icon_ph_pressed"
+            android:layout_weight="1"
+            android:onClick="PhoneOnClick"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/li_icon_wb_pressed"
+            android:layout_weight="1"
+            android:onClick="SinaOnClick"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_jufantitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录即代表您同意聚范使用权限规则"
+        android:layout_below="@+id/lin"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>
